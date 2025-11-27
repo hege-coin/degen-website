@@ -14,8 +14,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/degen-website/img/favicon.a29d6f7f74e98ffe5cea6bd2973581586db69bfcd801f2974252fd5f300e0fe6.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/degen-website/img/apple-touch-icon.4b1785a2eeb25e4515ecc354a73ca7c1b6409a69217656e9765d4b64b914068b.png">
     <link rel="canonical" href="https://hege-coin.github.io/degen-website/">
-    <link rel="stylesheet" href="/degen-website/css/style.min.3461b5708c77990e496ddbdbd4dc72055e3f6253853f23024da23dd6b2613897.css" integrity="sha256-NGG1cIx3mQ5Jbdvb1NxyBV4/YlOFPyMCTaI91rJhOJc=" crossorigin="anonymous">
-    <script src="/degen-website/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/degen-website/css/style.min.814a7def07d06410739fba6579e9436fe0a0efd6de9c87a65afc5538787715f4.css" integrity="sha256-gUp97wfQZBBzn7pleelDb+Cg79benIemWvxVOHh3FfQ=" crossorigin="anonymous">
+    <script src="/degen-website/js/main.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js" integrity="sha256-8peak6Ml/s+WBSY70UE5ijEcjiM4jtfc/3T5L35jKGY=" crossorigin="anonymous"></script>
     <link rel="preload" href="/degen-website/fonts/ibmpm.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/degen-website/fonts/ibmpm-b.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/degen-website/fonts/ibmpm-i.woff2" as="font" type="font/woff2">
@@ -26,9 +26,47 @@
       <a href="/degen-website/"><img src="/degen-website/img/hege-logo.svg" width="200" alt="HEGE"></a>
     </header>
     <main>
+      <script>
+      let ss = [
+        'Had enough of the bullshit?',
+        'Fuck the cabal',
+        'Screw the insider "KOLs"',
+        'Tired of rugpulls?',
+        'Tired of losing?',
+        'The system is rigged',
+        'Do you think you deserve your fair share?',
+      ];
+      let i = 1;
+      addEventListener("DOMContentLoaded", (event) => {
+        var h = document.getElementById('ss');
+        h.addEventListener('click', (event) => {
+            h.innerHTML = ss[i % ss.length];
+            i = i + 1;
+        });
+      });
+      </script>
       <section id="a" class="f">
-        <a href="#b"><svg viewbox="0 0 48 23" style="stroke-width: 4; stroke: white">
-        <polyline points="1.8,1.6 24,20.4 46.2,1.6"></polyline></svg></a>
+        <div>
+          <h1 id="ss">
+            Had enough of the bullshit?
+          </h1>
+          <h2>
+            $HEGE your bets
+          </h2>
+          <ul class="qlinks">
+            <li>
+              <a href="https://t.me/Hegequarters"><svg viewbox="0 0 512 430.95">
+              <path class="cls-1" d="M470.44,4.9L16.83,180.72c-18.25,8.19-24.43,24.59-4.41,33.48l116.37,37.17L410.15,76.59c15.36-10.97,31.09-8.05,17.56,4.02l-241.66,219.93-7.59,93.08c7.03,14.37,19.91,14.44,28.12,7.3l66.86-63.59,114.51,86.19c26.59,15.83,41.07,5.61,46.79-23.39L509.84,42.66c7.8-35.71-5.5-51.44-39.4-37.76Z"></path></svg></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/HegeCoin"><svg viewbox="0 0 512 462.799">
+              <path d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"></path></svg></a>
+            </li>
+            <li id="buy">
+              <a href="https://jup.ag/swap/SOL-HEGE">Buy $HEGE</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="b" class="m">
         <h1>
@@ -78,7 +116,7 @@
         </p>
       </section>
       <section class="f">
-        <img src="/degen-website/img/hyb-2.avif">
+        <img src="/degen-website/img/hyb-1.avif">
       </section>
       <section class="m">
         <h1>
@@ -131,7 +169,7 @@
         <p>
           Get off the fence. Take a stand. Make history.
         </p>
-        <ul>
+        <ul class="links">
           <li>
             <a href="https://t.me/Hegequarters">Telegram Hegequarters</a>
           </li>
@@ -155,7 +193,7 @@
             <img src="/degen-website/img/hyb-1.cc7c8e3de33d5778d7b95e0153eb53525575d875cb4cc0d7405d281f4bf3eee1.avif" width="663" height="1179" alt="$HEGE your bets">
           </li>
           <li id="ib">
-            <img src="/degen-website/img/hyb-2.47bf37062fe9578ae239b985730edeb9c0694a1a6f2fc40f2d030ead8966015c.avif" width="598" height="1070" alt="$HEGE your bets">
+            <img src="/degen-website/img/hyb-2.5c67a7256e1a9d73cefef80d99f6eb45837531999e732fb87ecd1a566b96272b.avif" width="598" height="1070" alt="$HEGE your bets">
           </li>
           <li id="ic">
             <img src="/degen-website/img/hyb-3.41d59f1d94c8d38fa9349b9be62da46c8f89417324bb091722e0b123526e0127.avif" width="606" height="1054" alt="$HEGE your bets">
