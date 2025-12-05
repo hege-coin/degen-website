@@ -14,8 +14,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/degen-website/img/favicon.a29d6f7f74e98ffe5cea6bd2973581586db69bfcd801f2974252fd5f300e0fe6.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/degen-website/img/apple-touch-icon.4b1785a2eeb25e4515ecc354a73ca7c1b6409a69217656e9765d4b64b914068b.png">
     <link rel="canonical" href="https://hege-coin.github.io/degen-website/">
-    <link rel="stylesheet" href="/degen-website/css/style.min.4ee3bcab7dbc8375046a91c37e40591fcb4c38169ba79e1cb20d914df4181766.css" integrity="sha256-TuO8q328g3UEapHDfkBZH8tMOBabp54csg2RTfQYF2Y=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/degen-website/css/style.min.6d882d39d043106b22ce92f583d15ed83cbee888d65db6eb49aa9545ca4633ad.css" integrity="sha256-bYgtOdBDEGsizpL1g9Fe2Dy+6IjWXbbrSaqVRcpGM60=" crossorigin="anonymous">
     <script src="/degen-website/js/main.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js" integrity="sha256-8peak6Ml/s+WBSY70UE5ijEcjiM4jtfc/3T5L35jKGY=" crossorigin="anonymous"></script>
+    <script src="/degen-website/js/powerglitch.min.js"></script>
     <link rel="preload" href="/degen-website/fonts/ibmpm.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/degen-website/fonts/ibmpm-b.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/degen-website/fonts/ibmpm-i.woff2" as="font" type="font/woff2">
@@ -44,6 +45,42 @@
             i = i + 1;
         });
       });
+
+      addEventListener('DOMContentLoaded', () => {
+        
+        PowerGlitch.glitch('#a h2',
+      {
+      "playMode": "always",
+      "optimizeSeo": true,
+      "createContainers": true,
+      "hideOverflow": false,
+      "timing": {
+      "duration": 3000
+
+      },
+      "glitchTimeSpan": {
+      "start": 0.5,
+      "end": 0.55
+
+      },
+      "shake": {
+      "velocity": 10,
+      "amplitudeX": 0.2,
+      "amplitudeY": 0.2
+      },
+      "slice": {
+      "count": 6,
+      "velocity": 15,
+      "minHeight": 0.02,
+      "maxHeight": 0.15,
+
+      "hueRotate": false,
+      "cssFilters": ""
+      },
+      "pulse": false
+      }
+        );
+      });
       </script>
       <section id="a">
         <ul class="col">
@@ -61,10 +98,10 @@
           </li>
         </ul>
         <div>
-          <h1 id="ss" class="gltch" data-glitch="Had enough of the bullshit?">
+          <h1 id="ss" data-glitch="Had enough of the bullshit?">
             Had enough of the bullshit?
           </h1>
-          <h2 class="gltch" data-glitch="$HEGE your bets">
+          <h2>
             $HEGE your bets
           </h2>
           <ul>
